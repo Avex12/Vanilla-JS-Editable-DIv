@@ -1,6 +1,6 @@
 const editableDiv = document.querySelector("#editable_div");
 const heading = document.querySelector("#heading");
-localStorage.setItem("heading", "Dummy Heading");
+localStorage.setItem("heading", localStorage.getItem("heading") || "Dummy");
 displayHeading();
 
 // Event Listener
